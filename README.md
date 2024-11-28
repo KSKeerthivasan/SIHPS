@@ -1,7 +1,7 @@
 # Smart India Hackathon Workshop
-# Date:
-## Register Number:
-## Name:
+# Date: 28-11-2024
+## Register Number: 24900276
+## Name: Keerthivasan KS
 ## Problem Title
 Implementation of the Alumni Association platform for the University/Institute.
 ## Problem Description
@@ -10,16 +10,171 @@ Background: Alumni associations play a pivotal role in fostering lifelong connec
 Government of Gujarat
 
 ## Idea
+The **Alumni Association Platform** is a web and mobile application designed to foster lifelong connections among alumni, current students, and the institution. This platform serves as a hub for networking, mentoring, job opportunities, event management, and philanthropic contributions. Leveraging modern technologies like AI, blockchain, and microservices, the solution ensures a secure, personalized, and scalable ecosystem.
+
+---
+
+## **Project Features**
+1. **AI-powered Networking**:
+   - Recommends connections and mentors based on shared interests, career paths, and location.
+   - Real-time sentiment analysis to improve alumni engagement.
+
+2. **Decentralized Donations**:
+   - Blockchain-based donation system with transparent allocation tracking.
+   - Impact visualization for donors showing real-time updates on funded projects.
+
+3. **Smart Job Portal**:
+   - Alumni can post and apply for jobs with verified credentials.
+   - AI-driven job recommendations based on profiles and skillsets.
+
+4. **Event Management**:
+   - Hybrid event hosting with live streaming, reminders, and analytics.
+   - Integrated calendar sync for event reminders.
+
+5. **Interactive Directory**:
+   - Advanced filters (year, location, profession) and real-time geospatial mapping of alumni.
+   - Integration with LinkedIn APIs for automatic profile updates.
+
+6. **Gamified Engagement**:
+   - Alumni earn engagement tokens for surveys, mentorship, and events.
+   - Tokens can be redeemed for exclusive benefits (e.g., merchandise, priority access).
+
+---
 
 
 ## Proposed Solution / Architecture Diagram
+![Proposed Architecture Diagram](architecture.webp)
 
+### **Components**:
+1. **Frontend (Web and Mobile Apps)**:
+   - User Interface for alumni, admin, and recruiters.
+2. **Backend Services**:
+   - Microservices for user management, donations, events, and job postings.
+3. **Blockchain Node**:
+   - For decentralized identity verification and transparent donations.
+4. **AI Engine**:
+   - For recommendations, sentiment analysis, and engagement tracking.
+5. **Database**:
+   - Primary (PostgreSQL) for structured data.
+   - Secondary (MongoDB) for flexible alumni activity logs.
+
+---
 
 ## Use Cases
 
+### **Actors**:
+- **Alumni**: Access features like registration, networking, jobs, and donations.
+- **Admin**: Manage events, verify alumni, and analyze engagement.
+- **Recruiters**: Post jobs, search for potential hires, and organize events.
+- **Students**: Seek mentorship, access the job portal, and participate in events.
+
+### **Key Use Cases**:
+1. Alumni Registration and Profile Updates.
+2. Donation Management with Blockchain.
+3. Event Creation, Registration, and Participation.
+4. Job Posting and Application.
+5. Mentorship Pairing and Networking.
+6. Feedback and Sentiment Analysis.
+
+---
+
 
 ## Technology Stack
+### **Frontend**
+- **Web**: React.js with Material-UI for responsive design.
+- **Mobile**: Flutter for cross-platform app development.
 
+### **Backend**
+- **Node.js** with Express.js: For building scalable REST APIs.
+- **GraphQL**: For efficient querying and data fetching.
+
+### **Database**
+- **PostgreSQL**: Relational database for core data storage.
+- **MongoDB**: NoSQL database for unstructured data like activity logs.
+- **Redis**: Caching layer for faster access to frequently queried data.
+
+### **Blockchain**
+- **Ethereum**: Smart contracts for decentralized donation tracking.
+- **IPFS**: Decentralized file storage for alumni credentials and event materials.
+
+### **AI & Analytics**
+- **PyTorch/TensorFlow**: For building AI models for recommendation systems.
+- **Apache Kafka**: For real-time data processing and analytics.
+
+### **Cloud & Deployment**
+- **AWS/GCP**: Cloud hosting, storage, and machine learning services.
+- **Docker**: For containerized deployments.
+- **Kubernetes**: For scaling microservices.
+
+---
 
 ## Dependencies
+### **Frontend**
+1. **React.js Libraries**:
+   - `react-router-dom`: For routing.
+   - `axios`: For API communication.
+2. **Flutter Plugins**:
+   - `flutter_bloc`: For state management.
+   - `firebase_auth`: For authentication.
+
+### **Backend**
+1. **Node.js Modules**:
+   - `jsonwebtoken`: For authentication.
+   - `express-validator`: For input validation.
+2. **Blockchain**:
+   - `web3.js`: For interacting with Ethereum blockchain.
+3. **GraphQL Tools**:
+   - `apollo-server-express`: For building GraphQL APIs.
+
+### **Database**
+- **PostgreSQL Drivers**: `pg` for Node.js integration.
+- **MongoDB Drivers**: `mongoose` for object modeling.
+
+### **AI Frameworks**
+- **PyTorch**: For building recommendation systems.
+- **NLTK**: For natural language processing tasks like sentiment analysis.
+
+### **DevOps**
+- **Docker**: To package applications in containers.
+- **Jenkins**: For continuous integration and deployment.
+
+---
+
+## **Installation**
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/selvasachein/SIHPS.git
+   ```
+2. Navigate to the project folder and set up dependencies.
+
+3. Run the backend:
+   ```bash
+   cd backend
+   npm install
+   npm start
+   ```
+
+4. Run the frontend:
+   ```bash
+   cd frontend
+   npm install
+   npm start
+   ```
+
+5. For mobile app:
+   ```bash
+   cd mobile
+   flutter pub get
+   flutter run
+   ```
+
+---
+
+## **Contributing**
+Contributions are welcome! Please read the [CONTRIBUTING.md](CONTRIBUTING.md) file for details on the process for submitting pull requests.
+
+---
+
+## **License**
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
